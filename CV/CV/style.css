@@ -1,0 +1,231 @@
+* {
+    margin: auto 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(242, 242, 242);
+}
+
+a {
+    text-decoration: none;
+}
+
+    a:link {
+        color: darkblue;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: black;
+        background-color: lightgray;
+        border-radius: 3px;
+    }
+
+.contact {
+    margin-top: 2%;
+    margin-left: 17%;
+    font-size: larger;
+    font-weight: bold;
+}
+
+    .contact span {
+        padding-left: 5%;
+    }
+
+    .contact img {
+        vertical-align: middle;
+        height: 45px;
+    }
+
+#profilpic {
+    margin: 5% 0 0 14%;
+    width: 180px;
+    box-shadow: 10px 10px 5px #bbb;
+    -moz-box-shadow: 10px 10px 5px #bbb;
+    -webkit-box-shadow: 10px 10px 5px #bbb;
+    -khtml-box-shadow: 10px 10px 5px #bbb;
+}
+
+.personal {
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 6%;
+    font-size: 40px;
+}
+
+    .personal h1 {
+        display: inline-block;
+        font-size: 40px;
+    }
+
+    .personal h2 {
+        font-size: 24px;
+        color: rgb(91, 92, 92);
+        text-align: center;
+    }
+
+    .personal #fname {
+        margin-right: 15px;
+        color: rgb(43, 42, 42);
+    }
+
+    .personal #social {
+        margin-left: 11%;
+    }
+
+    .personal span#social a {
+        background-color: rgb(242, 242, 242);
+    }
+
+    .personal #social img {
+        margin-top: 6%;
+        margin-left: 2%;
+        width: 30px;
+    }
+
+    .personal #lchange {
+        display: block;
+        margin-top: 5%;
+        margin-left: 23%;
+        font-size: 18px;
+    }
+
+        .personal #lchange time {
+            background-color: #bbb;
+            border-radius: 3px;
+        }
+#facebook a:hover {
+
+}
+
+.qr {
+    display: inline-block;
+    margin: 5% 5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+    .qr img {
+        margin-bottom: 10%;
+        box-shadow: 10px 10px 5px #bbb;
+        -moz-box-shadow: 10px 10px 5px #bbb;
+        -webkit-box-shadow: 10px 10px 5px #bbb;
+        -khtml-box-shadow: 10px 10px 5px #bbb;
+    }
+
+table {
+    margin-left: 4%;
+}
+
+    table tr td {
+        width: 35%;
+        vertical-align: top;
+    }
+
+.headArticle {
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+    .headArticle img {
+        width: 50px;
+        margin-right: 1%;
+        vertical-align: middle;
+    }
+
+    .headArticle h2 {
+        font-size: 20px;
+        display: inline-block;
+        color: deepskyblue;
+    }
+
+.details {
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+    .details h3 {
+        margin-left: 10%;
+        font-size: 18px;
+    }
+
+    .details ul li {
+        font-weight: bold;
+        margin-top: 2%;
+        margin-left: 10%;
+    }
+
+    .details #photos {
+        margin-left: 13%;
+    }
+
+.info {
+    margin-top: 1%;
+    font-weight: bold;
+    margin-left: 10%;
+}
+
+    .info .period {
+        color: rgb(43, 42, 42);
+        font-style: italic;
+    }
+
+    .info .prof {
+        font-weight: bold;
+    }
+
+#photos {
+    margin-top: 5%;
+}
+
+#softskills img {
+    width: 43px;
+}
+
+#experience img {
+    width: 43px;
+    vertical-align: middle;
+}
+
+#lstar li span {
+    display: inline-block;
+    width: 35%;
+}
+
+.stars {
+    display: inline-block;
+}
+
+    .stars img {
+        width: 26px;
+    }
+
+.estar {
+    opacity: 0.4;
+}
+
+#vehicle img {
+    vertical-align: bottom;
+    padding-right: 2%;
+}
+
+.list h3 {
+    margin-left: 15%;
+    font-size: 18px;
+}
+
+.list h3 {
+    margin-left: 15%;
+    font-size: 18px;
+}
+
+.list .cfor {
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 20%;
+    color: rgb(43, 42, 42);
+}
