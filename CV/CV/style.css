@@ -24,6 +24,15 @@ a {
         border-radius: 3px;
     }
 
+div#lang {
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+div#lang, a:hover {
+   background: none;
+}
+
 .contact {
     margin-top: 2%;
     margin-left: 17%;

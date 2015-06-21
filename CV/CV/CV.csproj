@@ -94,6 +94,7 @@
     <Content Include="pic\work.png" />
     <Content Include="profil.jpg" />
     <Content Include="qrcode.png" />
+    <Content Include="social\bg-flag.png" />
     <Content Include="social\facebook.png" />
     <Content Include="social\facebook1.png" />
     <Content Include="social\github.png" />
@@ -106,6 +107,7 @@
     <Content Include="social\skype1.png" />
     <Content Include="social\twitter.png" />
     <Content Include="social\twitter1.png" />
+    <Content Include="social\usa-flag.png" />
     <Content Include="social\yahoo.png" />
     <Content Include="social\yahoo1.png" />
     <Content Include="social\youtube.png" />
