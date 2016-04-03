@@ -27,6 +27,8 @@ a {
         color: black;
         background-color: lightgray;
         border-radius: 3px;
+        text-decoration: none;
+        cursor: pointer;
     }
 
 div#lang {
