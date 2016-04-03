@@ -6,6 +6,11 @@
 
 body {
     background-color: rgb(242, 242, 242);
+    overflow-x: hidden;
+}
+
+header {
+    margin-bottom: 20px;
 }
 
 a {
@@ -25,33 +30,35 @@ a {
     }
 
 div#lang {
-    margin-top: 2%;
-    margin-left: 5%;
+   float: left;
+   margin: 10px 5px 0 5px;
 }
 
 div#lang, a:hover {
    background: none;
 }
 
+.navbar-right {
+  margin-top: 5px;
+  margin-right: -25px;
+}
+
 .contact {
-    margin-top: 2%;
-    margin-left: 17%;
-    font-size: larger;
-    font-weight: bold;
+    margin-top: 10px;
 }
 
     .contact span {
-        padding-left: 5%;
+        padding-left: 20px;
     }
 
     .contact img {
         vertical-align: middle;
-        height: 45px;
+        /*height: 45px;*/
     }
 
 #profilpic {
-    margin: 5% 0 0 14%;
-    width: 180px;
+    max-width: 200px;
+    max-height: : 200px;
     box-shadow: 10px 10px 5px #bbb;
     -moz-box-shadow: 10px 10px 5px #bbb;
     -webkit-box-shadow: 10px 10px 5px #bbb;
@@ -60,29 +67,27 @@ div#lang, a:hover {
 
 .personal {
     display: inline-block;
-    margin-top: 5%;
-    margin-left: 6%;
     font-size: 40px;
 }
 
     .personal h1 {
         display: inline-block;
+        margin: 0;
         font-size: 40px;
     }
 
     .personal h2 {
+        margin: 0;
         font-size: 24px;
         color: rgb(91, 92, 92);
-        text-align: center;
     }
 
     .personal #fname {
-        margin-right: 15px;
         color: rgb(43, 42, 42);
     }
 
     .personal #social {
-        margin-left: 11%;
+        /*margin-left: 11%;*/
     }
 
     .personal span#social a {
@@ -90,15 +95,15 @@ div#lang, a:hover {
     }
 
     .personal #social img {
-        margin-top: 6%;
-        margin-left: 2%;
+        /*margin-top: 6%;
+        margin-left: 2%;*/
         width: 30px;
     }
 
     .personal #lchange {
         display: block;
-        margin-top: 5%;
-        margin-left: 23%;
+        /*margin-top: 5%;
+        margin-left: 23%;*/
         font-size: 18px;
     }
 
@@ -106,85 +111,20 @@ div#lang, a:hover {
             background-color: #bbb;
             border-radius: 3px;
         }
-#facebook a:hover {
-
-}
 
 .qr {
     display: inline-block;
-    margin: 5% 5%;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
 }
 
     .qr img {
-        margin-bottom: 10%;
+        margin-bottom: 10px;
         box-shadow: 10px 10px 5px #bbb;
         -moz-box-shadow: 10px 10px 5px #bbb;
         -webkit-box-shadow: 10px 10px 5px #bbb;
         -khtml-box-shadow: 10px 10px 5px #bbb;
-    }
-
-table {
-    margin-left: 4%;
-}
-
-    table tr td {
-        width: 35%;
-        vertical-align: top;
-    }
-
-.headArticle {
-    margin-top: 5%;
-    margin-left: 10%;
-}
-
-    .headArticle img {
-        width: 50px;
-        margin-right: 1%;
-        vertical-align: middle;
-    }
-
-    .headArticle h2 {
-        font-size: 20px;
-        display: inline-block;
-        color: deepskyblue;
-    }
-
-.details {
-    margin-top: 3%;
-    margin-left: 10%;
-}
-
-    .details h3 {
-        margin-left: 10%;
-        font-size: 18px;
-    }
-
-    .details ul li {
-        font-weight: bold;
-        margin-top: 2%;
-        margin-left: 10%;
-    }
-
-    .details #photos {
-        margin-left: 13%;
-    }
-
-.info {
-    margin-top: 1%;
-    font-weight: bold;
-    margin-left: 10%;
-}
-
-    .info .period {
-        color: rgb(43, 42, 42);
-        font-style: italic;
-    }
-
-    .info .prof {
-        font-weight: bold;
     }
 
 #photos {
@@ -200,26 +140,31 @@ table {
     vertical-align: middle;
 }
 
-#lstar li span {
-    display: inline-block;
-    width: 35%;
+#lstar li {
+  margin-bottom: 10px;
 }
 
 .stars {
     display: inline-block;
+    margin-left: 10px;
 }
 
     .stars img {
-        width: 26px;
+        vertical-align: top;
+        width: 20px;
     }
 
 .estar {
     opacity: 0.4;
 }
 
+#vehicle {
+    margin-left: 5px;
+}
+
 #vehicle img {
     vertical-align: bottom;
-    padding-right: 2%;
+    margin-right: 8px;
 }
 
 .list h3 {
