@@ -1,6 +1,11 @@
 (function hideDetails() {
-  $('#details').hide();
+  $('.hideItem').hide();
 }());
 function showDetails() {
-  $('#details').toggle();
+  //$(id).toggle();
+  //$(this).parent().siblings()[0].toggle();
+  var that = this;
+   $(function(){
+       $( that ).parent().siblings(".hideItem").toggle();
+   });
 }

@@ -52,7 +52,8 @@
                         </li>
                     </ul>
                     <span class="nav navbar-nav navbar-right">
-                        Последно обновена: <span class="label label-primary"> 03.04.2016</span>
+                        Последно обновена: <span class="label label-primary"> 03.04.2016</span> </br>
+                        <a href="http://karabeliov.com">Към уеб сайта</a>
                     </span>
                 </div>
             </div>
@@ -164,9 +165,9 @@
                                 Период: <b><em>Януари 2015 - Февруари 2016</em></b></br>
                                 Учебно заведение: <b>Софтуерна Академия Телерик</b></br>
                                 Населено място: <b>София</b></br>
-                                <a onclick="showDetails()">Взети курсове</a>
+                                <a onclick="showDetails.call(this)">Взети курсове</a>
                             </div>
-                            <div class="panel-body" id="details">
+                            <div class="panel-body hideItem">
                                 <p>
                                     <span class="label label-primary">Основи на C#</span>
                                     <span class="label label-primary">C# за напреднали</span>
@@ -179,9 +180,9 @@
                                     <span class="label label-success">JS UI и DOM</span>
                                     <span class="label label-success">JS ООП</span>
                                     <span class="label label-success">JS Приложения</span>
+                                    <span class="label label-success">Single Page Application</span>
                                     <span class="label label-warning">Photoshop</span>
                                     <span class="label label-warning">Slice and Dice</span>
-                                    <span class="label label-info">Single Page Application</span>
                                 </p>
                             </div>
                         </div>
@@ -375,57 +376,90 @@
                       <div class="panel panel-default">
                           <div class="panel-heading">
                               Добри комуникативни умения
+                              <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                          </div>
+                          <div class="panel-body hideItem">
+                              Придобити в следствие на ежедневното общуване с колеги в университета и работата,
+                              служители в държавни институции и прочие.
                           </div>
                       </div>
 
                       <div class="panel panel-default">
                           <div class="panel-heading">
                               Ефективна работа в екип
+                              <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                          </div>
+                          <div class="panel-body hideItem">
+                              Придобито в следствие на много изчетени книги и статии по темата,
+                              подпомагане на дейноста на комисията по време на работата ми като технически сътрудник,
+                              както и при вземане на участие в проекти на същата тема.
                           </div>
                       </div>
 
                       <div class="panel panel-default">
                           <div class="panel-heading">
                               Организаторски умения
+                              <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                          </div>
+                          <div class="panel-body hideItem">
+                              Придобити в следствие на множеството организирани мероприятия в университета,
+                              както и чрез опита ми като Администратор на хотел
+                              при вземане на решения по организационните въпроси.
                           </div>
                       </div>
 
                       <div class="panel panel-default">
                           <div class="panel-heading">
                               Презентационни умения
+                              <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                          </div>
+                          <div class="panel-body hideItem">
+                              Придобити в следствие на множеството</br>
+                              <a>публични изяви</a>.
                           </div>
                       </div>
 
                       <div class="panel panel-default">
                           <div class="panel-heading">
                               Финансова грамотност
+                              <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                          </div>
+                          <div class="panel-body hideItem">
+                              Придобитa в следствие на много изчетени книги и статии по темата,
+                              изучените предмети като счетоводство и предприемачество в гимназията,
+                              а също така и прилагането на познанията в личния живот.
                           </div>
                       </div>
 
                       <div class="panel panel-default">
                           <div class="panel-heading">
                               Умения за провокиране и убеждаване
+                              <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                          </div>
+                          <div class="panel-body hideItem">
+                              Придобити чрез опита ми във всички заемани длъжности в сферата на търговията и туризма.
                           </div>
                       </div>
 
                       <div class="panel panel-default">
                           <div class="panel-heading">
                               Умения за водене на преговори
+                              <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                          </div>
+                          <div class="panel-body hideItem">
+                              Придобити в следствие на участието ми в проекти на същата тематика,
+                              както и четене на литература.
                           </div>
                       </div>
 
                       <div class="panel panel-default">
                           <div class="panel-heading">
                               Умения за бързо реагиране при проблемни ситуации
+                              <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
                           </div>
-                      </div>
-
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                              Лесно адаптиране в международна среда
-                          </div>
-                          <div class="panel-body">
-                              Благодарение на опита ми придобит в чужбина
+                          <div class="panel-body hideItem">
+                              Придобити чрез опита ми като Администратор на хотел
+                              при решаване на възникнали проблемни ситуации.
                           </div>
                       </div>
                     </div>
@@ -492,8 +526,9 @@
                       <div class="panel panel-default">
                           <div class="panel-heading">
                             Удостоверение за завършено обучение
+                            <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
                           </div>
-                          <div class="panel-body">
+                          <div class="panel-body hideItem">
                             Изграждане на капацитет за осъществяване на ефективен граждански мониторинг.
                           </div>
                       </div>
@@ -501,8 +536,9 @@
                       <div class="panel panel-default">
                           <div class="panel-heading">
                             Удостоверение за завършено обучение
+                            <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
                           </div>
-                          <div class="panel-body">
+                          <div class="panel-body hideItem">
                             Умения за организиране и ръководене на срещи и обществени дискусии.
                           </div>
                       </div>
@@ -510,35 +546,44 @@
                       <div class="panel panel-default">
                           <div class="panel-heading">
                             Европейски сертификат Youthpass
+                            <!-- <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a> -->
                           </div>
                       </div>
 
                       <div class="panel panel-default">
                           <div class="panel-heading">
-                            Грамота за организиране на екологична акция
+                            Грамота за организиране на </br>
+                            екологична акция
+                            <!-- <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a> -->
                           </div>
                       </div>
 
                       <div class="panel panel-default">
                           <div class="panel-heading">
                             Удостоверение за проведена практика в работна среда
+                            <!-- <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a> -->
                           </div>
                       </div>
 
                       <div class="panel panel-default">
                           <div class="panel-heading">
-                            Сертификат за
-                            <span class="label label-primary">Умение за работа в екип</span>
-                            <span class="label label-primary">Презентационни умения</span>
-                            <span class="label label-primary">Комуникационни умения</span>
+                            Сертификат за умение работа с хора
+                            <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                          </div>
+                          <div class="panel-body hideItem">
+                            - Умение за работа в екип </br>
+                            - Презентационни умения </br>
+                            - Комуникационни умения </br>
                           </div>
                       </div>
 
                       <div class="panel panel-default">
                           <div class="panel-heading">
-                            Трета степен на професионална квалификация
+                            Трета степен на професионална </br>
+                            квалификация
+                            <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
                           </div>
-                          <div class="panel-body">
+                          <div class="panel-body hideItem">
                             Администратор в хотелиерството
                           </div>
                       </div>
@@ -581,11 +626,25 @@
                           <div class="panel-heading">
                             Упоритост и отговорност
                           </div>
+                          <div class="panel-body hideItem">
+
+                          </div>
                       </div>
 
                       <div class="panel panel-default">
                           <div class="panel-heading">
                             Висока мотивация за успех
+                          </div>
+                      </div>
+
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                            Любими книги
+                            <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                          </div>
+                          <div class="panel-body hideItem">
+                            - Най-богатият човек във Вавилон от <em>Джордж С. Клейсън</em> </br>
+                            - Богат татко, беден татко от <em>Робърт Кийосаки</em> </br>
                           </div>
                       </div>
                     </div>
@@ -599,7 +658,7 @@
     <div class="col-md-12" style="text-align: center;">
       2014 - 2016 ©Кристиан Карабельов | Всички права запазени.
       <p>
-        Karabeliov-CV 2.0
+        Karabeliov-CV 2.1
       </p>
     </div>
 
