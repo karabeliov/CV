@@ -1,12 +1,8 @@
 (function hideDetails() {
   $('.hideItem').hide();
+  $('.panel-primary').children('.hideItem').show();
 }());
-function showDetails() {
-  var that = this;
-   $(function(){
-       $( that ).parent().siblings(".hideItem").toggle();
-   });
-}
+
 
 function showMore(id) {
   $(id).toggle();
@@ -14,9 +10,7 @@ function showMore(id) {
 
 function collapse() {
   var that = this;
-   $(function(){
-       $( that ).siblings(".hideItem").toggle();
-   });
+  $( that ).siblings(".hideItem").toggle();
 }
 
 function showAll() {
@@ -32,3 +26,10 @@ function hideAll() {
   $('#hideAll').hide();
   $('#showAll').show();
 }
+
+(function hoverBold() {
+  var elements = $('.panel-heading').filter("[onclick='collapse.call(this)']");
+  $(elements).each(function( index ) {
+    $( this ).addClass( "hoverBold" );
+  });
+}());

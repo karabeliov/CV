@@ -128,8 +128,8 @@
                                onmouseout="this.src = 'icons/social/github.png'" />
                       </a>
                     </br>
-                      <a id='showAll' class="btn btn-xs btn-warning" onclick="showAll()">Разпъни</a>
-                      <a id='hideAll' class="btn btn-xs btn-warning hideItem" onclick="hideAll()">Свии</a>
+                      <button id='showAll' class="btn btn-xs btn-default" style="display: none" onclick="showAll()">Покажи</button>
+                      <button id='hideAll' class="btn btn-xs btn-default" onclick="hideAll()">Скрий</button>
                     </span>
                 </div>
             </div>
@@ -421,9 +421,8 @@
                     </div>
                     <div class="panel-body hideItem">
                         <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-heading" onclick="collapse.call(this)">
                                 Добри комуникативни умения
-                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
                             </div>
                             <div class="panel-body hideItem">
                                 Придобити в следствие на ежедневното общуване с колеги в университета и работата, служители в държавни институции и прочие.
@@ -431,9 +430,8 @@
                         </div>
 
                         <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-heading" onclick="collapse.call(this)">
                                 Ефективна работа в екип
-                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
                             </div>
                             <div class="panel-body hideItem">
                                 Придобито в следствие на много изчетени книги и статии по темата, подпомагане на дейноста на комисията по време на работата ми като технически сътрудник, както и при вземане на участие в проекти на същата тема.
@@ -441,9 +439,8 @@
                         </div>
 
                         <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-heading" onclick="collapse.call(this)">
                                 Организаторски умения
-                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
                             </div>
                             <div class="panel-body hideItem">
                                 Придобити в следствие на множеството организирани мероприятия в университета, както и чрез опита ми като Администратор на хотел при вземане на решения по организационните въпроси.
@@ -451,9 +448,8 @@
                         </div>
 
                         <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-heading" onclick="collapse.call(this)">
                                 Презентационни умения
-                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
                             </div>
                             <div class="panel-body hideItem">
                                 Придобити в следствие на множеството</br>
@@ -462,9 +458,8 @@
                         </div>
 
                         <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-heading" onclick="collapse.call(this)">
                                 Финансова грамотност
-                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
                             </div>
                             <div class="panel-body hideItem">
                                 Придобитa в следствие на много изчетени книги и статии по темата, изучените предмети като счетоводство и предприемачество в гимназията, а също така и прилагането на познанията в личния живот.
@@ -472,9 +467,8 @@
                         </div>
 
                         <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-heading" onclick="collapse.call(this)">
                                 Умения за провокиране и убеждаване
-                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
                             </div>
                             <div class="panel-body hideItem">
                                 Придобити чрез опита ми във всички заемани длъжности в сферата на търговията и туризма.
@@ -482,9 +476,8 @@
                         </div>
 
                         <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-heading" onclick="collapse.call(this)">
                                 Умения за водене на преговори
-                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
                             </div>
                             <div class="panel-body hideItem">
                                 Придобити в следствие на участието ми в проекти на същата тематика, както и четене на литература.
@@ -492,9 +485,8 @@
                         </div>
 
                         <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-heading" onclick="collapse.call(this)">
                                 Умения за бързо реагиране при проблемни ситуации
-                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
                             </div>
                             <div class="panel-body hideItem">
                                 Придобити чрез опита ми като Администратор на хотел при решаване на възникнали проблемни ситуации.
@@ -562,9 +554,8 @@
                     </div>
                     <div class="panel-body hideItem">
                         <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-heading" onclick="collapse.call(this)">
                                 Удостоверение за завършено обучение
-                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
                             </div>
                             <div class="panel-body hideItem">
                                 Изграждане на капацитет за осъществяване на ефективен граждански мониторинг.
@@ -573,9 +564,8 @@
                         </div>
 
                         <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-heading" onclick="collapse.call(this)">
                                 Удостоверение за завършено обучение
-                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
                             </div>
                             <div class="panel-body hideItem">
                                 Умения за организиране и ръководене на срещи и обществени дискусии.
@@ -584,9 +574,8 @@
                         </div>
 
                         <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-heading" onclick="collapse.call(this)">
                                 Европейски сертификат Youthpass
-                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
                             </div>
                             <div class="panel-body hideItem">
                                 Youthpass е европейски сертификат (като диплома), която се използва в международните проекти на програмата Младежта в действие (като младежки обмени).
@@ -595,10 +584,8 @@
                         </div>
 
                         <div class="panel panel-default">
-                            <div class="panel-heading">
-                                Грамота за организиране на </br>
-                                екологична акция
-                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                            <div class="panel-heading" onclick="collapse.call(this)">
+                                Грамота за организиране на екологична акция
                             </div>
                             <div class="panel-body hideItem">
                                 Грамота от Пловдивски Университет "Паисий Хилендарски" филиал Смолян за организиране на екологична акция.
@@ -607,9 +594,8 @@
                         </div>
 
                         <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-heading" onclick="collapse.call(this)">
                                 Удостоверение за проведена практика в работна среда
-                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
                             </div>
                             <div class="panel-body hideItem">
                                 Удостоверение за проведена практика (Еколог) в работна среда.
@@ -618,9 +604,8 @@
                         </div>
 
                         <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-heading" onclick="collapse.call(this)">
                                 Сертификат за умение работа с хора
-                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
                             </div>
                             <div class="panel-body hideItem">
                                 - Умение за работа в екип </br>
@@ -631,10 +616,8 @@
                         </div>
 
                         <div class="panel panel-default">
-                            <div class="panel-heading">
-                                Трета степен на професионална </br>
-                                квалификация
-                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                            <div class="panel-heading" onclick="collapse.call(this)">
+                                Трета степен на професионална квалификация
                             </div>
                             <div class="panel-body hideItem">
                                 Администратор в хотелиерството
@@ -692,9 +675,8 @@
                         </div>
 
                         <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-heading"  onclick="collapse.call(this)">
                                 Любими книги
-                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
                             </div>
                             <div class="panel-body hideItem">
                                 - Най-богатият човек във Вавилон от <em>Джордж С. Клейсън</em> </br>
