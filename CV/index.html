@@ -52,8 +52,8 @@
                         </li>
                     </ul>
                     <span class="nav navbar-nav navbar-right">
-                        Последно обновена: <span class="label label-primary"> 03.04.2016</span> </br>
-                        <a href="http://karabeliov.com">Към уеб сайта</a>
+                        Последно обновена: <span class="label label-primary"> 18.04.2016</span> </br>
+                    <a href="http://karabeliov.com">Към уеб сайта</a>
                     </span>
                 </div>
             </div>
@@ -127,6 +127,9 @@
                                onmouseover="this.src = 'icons/social/github1.png'"
                                onmouseout="this.src = 'icons/social/github.png'" />
                       </a>
+                    </br>
+                      <a id='showAll' class="btn btn-xs btn-warning" onclick="showAll()">Разпъни</a>
+                      <a id='hideAll' class="btn btn-xs btn-warning hideItem" onclick="hideAll()">Свии</a>
                     </span>
                 </div>
             </div>
@@ -145,17 +148,30 @@
         <div class="col-md-4">
             <div class="bs-component">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
+                    <div class="panel-heading" onclick="collapse.call(this)">
                         <img src="icons/education.png" alt="Education" width="26" height="26" />
                         <h3 class="panel-title" style="display: inline-block">ОБРАЗОВАНИЕ</h3>
                     </div>
-                    <div class="panel-body">
+                    <div class="panel-body hideItem">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 Специалност: <b>Екология и опазване на околната среда</b></br>
                                 Период: <b><em>Октомври 2012 - до момента</em></b></br>
                                 Учебно заведение: <b>ПУ "Паисий Хилендарски"</b></br>
                                 Населено място: <b>Смолян</b></br>
+
+                                <div class="dropdown">
+                                    <button class="btn btn-xs btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        вижте още
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">Дипломна работа</a></li>
+                                        <li><a href="#">Диплома (бакалавър)</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="https://uni-plovdiv.bg/pages/index/45/">Официален уебсайт</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
 
@@ -165,9 +181,21 @@
                                 Период: <b><em>Януари 2015 - Февруари 2016</em></b></br>
                                 Учебно заведение: <b>Софтуерна Академия Телерик</b></br>
                                 Населено място: <b>София</b></br>
-                                <a onclick="showDetails.call(this)">Взети курсове</a>
+
+                                <div class="dropdown">
+                                    <button class="btn btn-xs btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        вижте още
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a onclick="showMore(courses)">Взети курсове</a></li>
+                                        <li><a href="#">Сертификати</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="http://academy.telerik.com/academy/about">За Академията</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="panel-body hideItem">
+                            <div class="panel-body hideItem" id="courses">
                                 <p>
                                     <span class="label label-primary">Основи на C#</span>
                                     <span class="label label-primary">C# за напреднали</span>
@@ -193,17 +221,30 @@
                                 Период: <b><em>Януари 2015 - Февруари 2016</em></b></br>
                                 Учебно заведение: <b>ПГИТ "Алеко Константинов"</b></br>
                                 Населено място: <b>Велинград</b></br>
+
+                                <div class="dropdown">
+                                    <button class="btn btn-xs btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        вижте още
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="http://www.karabeliov.com/work/%D0%BF%D1%80%D0%BE%D1%84%D0%B5%D1%81%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%BD%D0%B0-%D0%BA%D0%B2%D0%B0%D0%BB%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F/">Професионална квалификация</a></li>
+                                        <li><a href="#">Диплома (средно)</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="http://www.pgit-velingrad.info/">Официален уебсайт</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
+                    <div class="panel-heading" onclick="collapse.call(this)">
                         <img src="icons/projects.png" alt="Projects" height="26" />
                         <h3 class="panel-title" style="display: inline-block">ПРОЕКТИ</h3>
                     </div>
-                    <div class="panel-body">
+                    <div class="panel-body hideItem">
                         <ul class="list-group">
                             <li class="list-group-item">
                                 <span class="badge">1</span>
@@ -226,15 +267,16 @@
                 </div>
 
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
+                    <div class="panel-heading" onclick="collapse.call(this)">
                         <img src="icons/work.png" alt="Work" width="20" height="20" />
                         <h3 class="panel-title" style="display: inline-block">ТРУДОВ ОПИТ</h3>
                     </div>
-                    <div class="panel-body">
+                    <div class="panel-body hideItem">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 Длъжност: <b>Специалист Технически сътрудник</b></br>
-                                Период: <b><em>Септември 2015 – Ноември 2015</em></b></br>
+                                Период: <b>3 месеца</br>
+                                <em>Септември 2015 – Ноември 2015</em></b></br>
                                 Работодател: <b>Общинска администрация</b></br>
                                 Населено място: <b>Смолян</b></br>
                             </div>
@@ -243,7 +285,8 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 Длъжност: <b>Технически сътрудник</b></br>
-                                Период: <b><em>Април 2014 – Октомври 2014</em></b></br>
+                                Период: <b>6 месеца</br>
+                                <em>Април 2014 – Октомври 2014</em></b></br>
                                 Работодател: <b>Областна администрация</b></br>
                                 Населено място: <b>Смолян</b></br>
                             </div>
@@ -252,7 +295,8 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 Длъжност: <b>Стажант Еколог</b></br>
-                                Период: <b><em>Юни 2013 – Октомври 2013</em></b></br>
+                                Период: <b>2 месеца</br>
+                                <em>Юли 2013 – Август 2013</em></b></br>
                                 Работодател: <b>Сдружение “Развитие XXI век”</b></br>
                                 Населено място: <b>Смолян</b></br>
                             </div>
@@ -261,7 +305,8 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 Длъжност: <b>Администратор на хотел</b></br>
-                                Период: <b><em>Декември 2012 – Март 2013</em></b></br>
+                                Период: <b>4 месеца</br>
+                                <em>Декември 2012 – Март 2013</em></b></br>
                                 Работодател: <b>Хотел Дикас</b></br>
                                 Населено място: <b>Смолян</b></br>
                             </div>
@@ -270,7 +315,8 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 Длъжност: <b>Барман</b></br>
-                                Период: <b><em>Август 2012 – Октомври 2012</em></b></br>
+                                Период: <b>3 месеца</br>
+                                <em>Август 2012 – Октомври 2012</em></b></br>
                                 Работодател: <b>СПА Хотел Селект</b></br>
                                 Населено място: <b>Велинград</b></br>
                             </div>
@@ -279,7 +325,8 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 Длъжност: <b>Сервитьор</b></br>
-                                Период: <b><em>Декември 2010 – Февруари 2011</em></b></br>
+                                Период: <b>3 месеца</br>
+                                <em>Декември 2010 – Февруари 2011</em></b></br>
                                 Работодател: <b>Хотел Свети Спас</b></br>
                                 Населено място: <b>Велинград</b></br>
                             </div>
@@ -293,27 +340,27 @@
         <div class="col-md-4">
             <div class="bs-component">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
+                    <div class="panel-heading" onclick="collapse.call(this)">
                         <img src="icons/computer.png" alt="Computer" height="26">
                         <h3 class="panel-title" style="display: inline-block">КОМПЮТЪРНИ УМЕНИЯ</h3>
                     </div>
-                    <div class="panel-body">
+                    <div class="panel-body hideItem">
 
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 Базови умения
                             </div>
                             <div class="panel-body">
-                              Отлични софтуерни и хардуерни познания</br>
-                              Работа с Операционни системи:
-                              <span class="label label-primary">Windows</span>
-                              <span class="label label-primary">Linux</span></br>
-                              Добро владеене на Microsoft Office™:
-                              <span class="label label-primary">Word™</span>
-                              <span class="label label-primary">Excel™</span>
-                              <span class="label label-primary">PowerPoint™</span>
-                              <span class="label label-primary">Access™</span>
-                              <span class="label label-primary">Publisher™</span></br>
+                                Отлични софтуерни и хардуерни познания</br>
+                                Работа с Операционни системи:
+                                <span class="label label-primary">Windows</span>
+                                <span class="label label-primary">Linux</span></br>
+                                Добро владеене на Microsoft Office™:
+                                <span class="label label-primary">Word™</span>
+                                <span class="label label-primary">Excel™</span>
+                                <span class="label label-primary">PowerPoint™</span>
+                                <span class="label label-primary">Access™</span>
+                                <span class="label label-primary">Publisher™</span></br>
                             </div>
                         </div>
 
@@ -368,147 +415,138 @@
                 </div>
 
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
+                    <div class="panel-heading" onclick="collapse.call(this)">
                         <img src="icons/person.png" alt="Person" height="26">
                         <h3 class="panel-title" style="display: inline-block">УМЕНИЯ И КОМПЕТЕНЦИИ</h3>
                     </div>
-                    <div class="panel-body">
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                              Добри комуникативни умения
-                              <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
-                          </div>
-                          <div class="panel-body hideItem">
-                              Придобити в следствие на ежедневното общуване с колеги в университета и работата,
-                              служители в държавни институции и прочие.
-                          </div>
-                      </div>
+                    <div class="panel-body hideItem">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Добри комуникативни умения
+                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                            </div>
+                            <div class="panel-body hideItem">
+                                Придобити в следствие на ежедневното общуване с колеги в университета и работата, служители в държавни институции и прочие.
+                            </div>
+                        </div>
 
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                              Ефективна работа в екип
-                              <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
-                          </div>
-                          <div class="panel-body hideItem">
-                              Придобито в следствие на много изчетени книги и статии по темата,
-                              подпомагане на дейноста на комисията по време на работата ми като технически сътрудник,
-                              както и при вземане на участие в проекти на същата тема.
-                          </div>
-                      </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Ефективна работа в екип
+                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                            </div>
+                            <div class="panel-body hideItem">
+                                Придобито в следствие на много изчетени книги и статии по темата, подпомагане на дейноста на комисията по време на работата ми като технически сътрудник, както и при вземане на участие в проекти на същата тема.
+                            </div>
+                        </div>
 
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                              Организаторски умения
-                              <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
-                          </div>
-                          <div class="panel-body hideItem">
-                              Придобити в следствие на множеството организирани мероприятия в университета,
-                              както и чрез опита ми като Администратор на хотел
-                              при вземане на решения по организационните въпроси.
-                          </div>
-                      </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Организаторски умения
+                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                            </div>
+                            <div class="panel-body hideItem">
+                                Придобити в следствие на множеството организирани мероприятия в университета, както и чрез опита ми като Администратор на хотел при вземане на решения по организационните въпроси.
+                            </div>
+                        </div>
 
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                              Презентационни умения
-                              <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
-                          </div>
-                          <div class="panel-body hideItem">
-                              Придобити в следствие на множеството</br>
-                              <a>публични изяви</a>.
-                          </div>
-                      </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Презентационни умения
+                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                            </div>
+                            <div class="panel-body hideItem">
+                                Придобити в следствие на множеството</br>
+                                <a>публични изяви</a>.
+                            </div>
+                        </div>
 
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                              Финансова грамотност
-                              <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
-                          </div>
-                          <div class="panel-body hideItem">
-                              Придобитa в следствие на много изчетени книги и статии по темата,
-                              изучените предмети като счетоводство и предприемачество в гимназията,
-                              а също така и прилагането на познанията в личния живот.
-                          </div>
-                      </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Финансова грамотност
+                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                            </div>
+                            <div class="panel-body hideItem">
+                                Придобитa в следствие на много изчетени книги и статии по темата, изучените предмети като счетоводство и предприемачество в гимназията, а също така и прилагането на познанията в личния живот.
+                            </div>
+                        </div>
 
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                              Умения за провокиране и убеждаване
-                              <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
-                          </div>
-                          <div class="panel-body hideItem">
-                              Придобити чрез опита ми във всички заемани длъжности в сферата на търговията и туризма.
-                          </div>
-                      </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Умения за провокиране и убеждаване
+                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                            </div>
+                            <div class="panel-body hideItem">
+                                Придобити чрез опита ми във всички заемани длъжности в сферата на търговията и туризма.
+                            </div>
+                        </div>
 
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                              Умения за водене на преговори
-                              <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
-                          </div>
-                          <div class="panel-body hideItem">
-                              Придобити в следствие на участието ми в проекти на същата тематика,
-                              както и четене на литература.
-                          </div>
-                      </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Умения за водене на преговори
+                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                            </div>
+                            <div class="panel-body hideItem">
+                                Придобити в следствие на участието ми в проекти на същата тематика, както и четене на литература.
+                            </div>
+                        </div>
 
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                              Умения за бързо реагиране при проблемни ситуации
-                              <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
-                          </div>
-                          <div class="panel-body hideItem">
-                              Придобити чрез опита ми като Администратор на хотел
-                              при решаване на възникнали проблемни ситуации.
-                          </div>
-                      </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Умения за бързо реагиране при проблемни ситуации
+                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                            </div>
+                            <div class="panel-body hideItem">
+                                Придобити чрез опита ми като Администратор на хотел при решаване на възникнали проблемни ситуации.
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
+                    <div class="panel-heading" onclick="collapse.call(this)">
                         <img src="icons/speech.png" alt="Speech" height="28">
                         <h3 class="panel-title" style="display: inline-block">ГОВОРИМИ ЕЗИЦИ</h3>
                     </div>
-                    <div class="panel-body">
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                            Български език
-                            <div class="stars">
-                                <img src="icons/fstar.png" alt="Star">
-                                <img src="icons/fstar.png" alt="Star">
-                                <img src="icons/fstar.png" alt="Star">
-                                <img src="icons/fstar.png" alt="Star">
-                                <img src="icons/fstar.png" alt="Star">
+                    <div class="panel-body hideItem">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Български език
+                                <div class="stars">
+                                    <img src="icons/fstar.png" alt="Star">
+                                    <img src="icons/fstar.png" alt="Star">
+                                    <img src="icons/fstar.png" alt="Star">
+                                    <img src="icons/fstar.png" alt="Star">
+                                    <img src="icons/fstar.png" alt="Star">
+                                </div>
                             </div>
-                          </div>
-                      </div>
+                        </div>
 
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                            Английски език
-                            <div class="stars">
-                                <img src="icons/fstar.png" alt="Star">
-                                <img src="icons/fstar.png" alt="Star">
-                                <img src="icons/fstar.png" alt="Star">
-                                <img src="icons/fstar.png" alt="Star">
-                                <img class="estar" src="icons/fstar.png" alt="Star">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Английски език
+                                <div class="stars">
+                                    <img src="icons/fstar.png" alt="Star">
+                                    <img src="icons/fstar.png" alt="Star">
+                                    <img src="icons/fstar.png" alt="Star">
+                                    <img src="icons/fstar.png" alt="Star">
+                                    <img class="estar" src="icons/fstar.png" alt="Star">
+                                </div>
                             </div>
-                          </div>
-                      </div>
+                        </div>
                     </div>
                 </div>
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
+                    <div class="panel-heading" onclick="collapse.call(this)">
                         <img src="icons/car.png" alt="Car" height="20">
                         <h3 class="panel-title" style="display: inline-block">ШОФЬОРСКА КНИЖКА</h3>
                     </div>
-                    <div class="panel-body" id="vehicle">
-                          <img class="estar" src="icons/motor.png" width="50" alt="swim">
-                          <img src="icons/bcar.png" width="80" alt="talk">
-                          <img class="estar" src="icons/trunk.png" width="100" alt="team">
-                          <img class="estar" src="icons/autobus.png" width="35" alt="presentation">
-                          <img class="estar" src="icons/tractor.png" width="35" alt="discusion">
+                    <div class="panel-body hideItem" id="vehicle">
+                        <img class="estar" src="icons/motor.png" width="50" alt="swim">
+                        <img src="icons/bcar.png" width="80" alt="talk">
+                        <img class="estar" src="icons/trunk.png" width="100" alt="team">
+                        <img class="estar" src="icons/autobus.png" width="35" alt="presentation">
+                        <img class="estar" src="icons/tractor.png" width="35" alt="discusion">
                     </div>
                 </div>
             </div>
@@ -518,148 +556,164 @@
         <div class="col-md-4">
             <div class="bs-component">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
+                    <div class="panel-heading" onclick="collapse.call(this)">
                         <img src="icons/certificate.png" alt="Certificate" width="26" height="26">
                         <h3 class="panel-title" style="display: inline-block">СЕРТИФИКАТИ</h3>
                     </div>
-                    <div class="panel-body">
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                            Удостоверение за завършено обучение
-                            <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
-                          </div>
-                          <div class="panel-body hideItem">
-                            Изграждане на капацитет за осъществяване на ефективен граждански мониторинг.
-                          </div>
-                      </div>
+                    <div class="panel-body hideItem">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Удостоверение за завършено обучение
+                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                            </div>
+                            <div class="panel-body hideItem">
+                                Изграждане на капацитет за осъществяване на ефективен граждански мониторинг.
+                                <a class="pull-right small more" href="http://www.karabeliov.com/work/%D1%83%D0%B4%D0%BE%D1%81%D1%82%D0%BE%D0%B2%D0%B5%D1%80%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B7%D0%B0-%D0%BE%D1%81%D1%8A%D1%89%D0%B5%D1%81%D1%82%D0%B2%D1%8F%D0%B2%D0%B0%D0%BD%D0%B5-%D0%BD%D0%B0-%D0%B3%D1%80/">Преглед на сертификата</a>
+                            </div>
+                        </div>
 
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                            Удостоверение за завършено обучение
-                            <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
-                          </div>
-                          <div class="panel-body hideItem">
-                            Умения за организиране и ръководене на срещи и обществени дискусии.
-                          </div>
-                      </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Удостоверение за завършено обучение
+                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                            </div>
+                            <div class="panel-body hideItem">
+                                Умения за организиране и ръководене на срещи и обществени дискусии.
+                                <a class="pull-right small more" href="http://www.karabeliov.com/work/%D1%83%D0%B4%D0%BE%D1%81%D1%82%D0%BE%D0%B2%D0%B5%D1%80%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B7%D0%B0-%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B8%D1%80%D0%B0%D0%BD%D0%B5-%D0%BD%D0%B0-%D0%B4%D0%B8%D1%81/">Преглед на сертификата</a>
+                            </div>
+                        </div>
 
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                            Европейски сертификат Youthpass
-                            <!-- <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a> -->
-                          </div>
-                      </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Европейски сертификат Youthpass
+                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                            </div>
+                            <div class="panel-body hideItem">
+                                Youthpass е европейски сертификат (като диплома), която се използва в международните проекти на програмата Младежта в действие (като младежки обмени).
+                                <a class="pull-right small more" href="http://www.karabeliov.com/work/youthpass-%D1%81%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82/">Преглед на сертификата</a>
+                            </div>
+                        </div>
 
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                            Грамота за организиране на </br>
-                            екологична акция
-                            <!-- <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a> -->
-                          </div>
-                      </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Грамота за организиране на </br>
+                                екологична акция
+                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                            </div>
+                            <div class="panel-body hideItem">
+                                Грамота от Пловдивски Университет "Паисий Хилендарски" филиал Смолян за организиране на екологична акция.
+                                <a class="pull-right small more" href="http://www.karabeliov.com/work/%D0%B3%D1%80%D0%B0%D0%BC%D0%BE%D1%82%D0%B0-%D0%B7%D0%B0-%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B8%D1%80%D0%B0%D0%BD%D0%B5-%D0%BD%D0%B0-%D0%B5%D0%BA%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%BD/">Преглед на сертификата</a>
+                            </div>
+                        </div>
 
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                            Удостоверение за проведена практика в работна среда
-                            <!-- <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a> -->
-                          </div>
-                      </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Удостоверение за проведена практика в работна среда
+                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                            </div>
+                            <div class="panel-body hideItem">
+                                Удостоверение за проведена практика (Еколог) в работна среда.
+                                <a class="pull-right small more" href="http://www.karabeliov.com/work/%D1%83%D0%B4%D0%BE%D1%81%D1%82%D0%BE%D0%B2%D0%B5%D1%80%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B7%D0%B0-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B0-%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/">Преглед на сертификата</a>
+                            </div>
+                        </div>
 
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                            Сертификат за умение работа с хора
-                            <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
-                          </div>
-                          <div class="panel-body hideItem">
-                            - Умение за работа в екип </br>
-                            - Презентационни умения </br>
-                            - Комуникационни умения </br>
-                          </div>
-                      </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Сертификат за умение работа с хора
+                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                            </div>
+                            <div class="panel-body hideItem">
+                                - Умение за работа в екип </br>
+                                - Презентационни умения </br>
+                                - Комуникационни умения </br>
+                                <a class="pull-right small more" href="http://www.karabeliov.com/work/%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D0%B2-%D0%B5%D0%BA%D0%B8%D0%BF%D0%BF%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%B8-%D0%B8-%D0%BA%D0%BE%D0%BC%D1%83%D0%BD%D0%B8-2/">Преглед на сертификата</a>
+                            </div>
+                        </div>
 
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                            Трета степен на професионална </br>
-                            квалификация
-                            <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
-                          </div>
-                          <div class="panel-body hideItem">
-                            Администратор в хотелиерството
-                          </div>
-                      </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Трета степен на професионална </br>
+                                квалификация
+                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                            </div>
+                            <div class="panel-body hideItem">
+                                Администратор в хотелиерството
+                                <a class="pull-right small more" href="http://www.karabeliov.com/work/%D0%BF%D1%80%D0%BE%D1%84%D0%B5%D1%81%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%BD%D0%B0-%D0%BA%D0%B2%D0%B0%D0%BB%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F/">Преглед на сертификата</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
+                    <div class="panel-heading" onclick="collapse.call(this)">
                         <img src="icons/recom.png" alt="Recomdation" width="26" height="26">
                         <h3 class="panel-title" style="display: inline-block">ПРЕПОРЪКИ</h3>
                     </div>
-                    <div class="panel-body">
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                            Препоръка от РИК
-                          </div>
-                      </div>
+                    <div class="panel-body hideItem">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Препоръка от РИК
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
+                    <div class="panel-heading" onclick="collapse.call(this)">
                         <img src="icons/info.png" alt="Info" width="22" height="22">
                         <h3 class="panel-title" style="display: inline-block">ДОПЪЛНИТЕЛНА ИНФОРМАЦИЯ</h3>
                     </div>
-                    <div class="panel-body">
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                            Стремеж към обучение и кариерно развитие
-                          </div>
-                      </div>
+                    <div class="panel-body hideItem">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Стремеж към обучение и кариерно развитие
+                            </div>
+                        </div>
 
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                            Интерес към технологичните новости
-                          </div>
-                      </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Интерес към технологичните новости
+                            </div>
+                        </div>
 
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                            Упоритост и отговорност
-                          </div>
-                          <div class="panel-body hideItem">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Упоритост и отговорност
+                            </div>
+                            <div class="panel-body hideItem">
 
-                          </div>
-                      </div>
+                            </div>
+                        </div>
 
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                            Висока мотивация за успех
-                          </div>
-                      </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Висока мотивация за успех
+                            </div>
+                        </div>
 
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                            Любими книги
-                            <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
-                          </div>
-                          <div class="panel-body hideItem">
-                            - Най-богатият човек във Вавилон от <em>Джордж С. Клейсън</em> </br>
-                            - Богат татко, беден татко от <em>Робърт Кийосаки</em> </br>
-                          </div>
-                      </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Любими книги
+                                <a class="pull-right small more" onclick="showDetails.call(this)">Виж повече</a>
+                            </div>
+                            <div class="panel-body hideItem">
+                                - Най-богатият човек във Вавилон от <em>Джордж С. Клейсън</em> </br>
+                                - Богат татко, беден татко от <em>Робърт Кийосаки</em> </br>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <img src="kplug.png" alt="K Mark" style="margin-left: -20px; margin-top: -50px;">
+                <img src="kplug.png" alt="K Mark" style="margin-left: -20px; margin-top: 0px;">
             </div>
         </div>
     </section>
 
     <div class="col-md-12" style="text-align: center;">
-      2014 - 2016 ©Кристиан Карабельов | Всички права запазени.
-      <p>
-        Karabeliov-CV 2.1
-      </p>
+        2014 - 2016 ©Кристиан Карабельов | Всички права запазени.
+        <p>
+            Karabeliov-CV 2.2
+        </p>
     </div>
 
     <script type="text/javascript" async="" src="scripts/bootstrap.min.js"></script>

@@ -92,10 +92,6 @@ div#lang, a:hover {
         /*margin-left: 11%;*/
     }
 
-    .personal span#social a {
-        background-color: rgb(242, 242, 242);
-    }
-
     .personal #social img {
         /*margin-top: 6%;
         margin-left: 2%;*/
@@ -171,4 +167,13 @@ div#lang, a:hover {
 
 .more {
   margin-top: 10px;
+}
+
+div.panel-heading:hover {
+    cursor: pointer;
+    color: black;
+}
+
+div.panel-heading:hover h3 {
+    font-weight: bold;
 }
