@@ -1,6 +1,8 @@
 (function hideDetails() {
   $('.hideItem').hide();
   $('.panel-primary').children('.hideItem').show();
+  $('#programmerSkills').show();
+  $('#baseSkills').show();
 }());
 
 
@@ -18,6 +20,8 @@ function showAll() {
 
   $('#hideAll').show();
   $('#showAll').hide();
+  $('#programmerSkills').show();
+  $('#baseSkills').show();
 }
 
 function hideAll() {
