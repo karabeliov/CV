@@ -4,6 +4,10 @@
   $('#programmerSkills').show();
   $('#baseSkills').show();
 
+  toastr.options = {
+  "closeButton": true
+  }
+
   toastr["info"]("Това е автобиографията ми.", "Добре дошли!");
 }());
 
