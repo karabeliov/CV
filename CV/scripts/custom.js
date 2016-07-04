@@ -3,14 +3,7 @@
   $('.panel-primary').children('.hideItem').show();
   $('#programmerSkills').show();
   $('#baseSkills').show();
-
-  toastr.options = {
-  "closeButton": true
-  }
-
-  toastr["info"]("Това е автобиографията ми.", "Добре дошли!");
 }());
-
 
 function showMore(id) {
   $(id).toggle();
